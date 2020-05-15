@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Recursive Regular';
+  font-display: swap;
+  src: url("../fonts/RecursiveSansLnrSt-Regular.woff2") format("woff2");
+  font-variation-settings: "CASL" 0, "slnt" -5;
+}
+
+@font-face {
+  font-family: 'Recursive Light';
+  font-display: swap;
+  src: url("../fonts/RecursiveSansLnrSt-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Recursive Italic';
+  font-display: swap;
+  src: url("../fonts/RecursiveSansLnrSt-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-display: swap;
+  src: url("../fonts/Segoe UI.woff") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: "Recursive Light", "Segeo UI", sans-serif;
+  color: #000;
+}
+
+body {
+  background-color: rgba(34, 40, 49, 0.9);
+}
+
+.nav {
+  position: relative;
+  -webkit-filter: url("#gooey");
+          filter: url("#gooey");
+}
+
+.nav__bar {
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+  border-radius: 5px;
+}
+
+.nav__bar--drop-menu {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.nav__hamburger {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.hamburger svg {
+  width: 80px;
+  height: 80px;
+}
+
+.hamburger svg path {
+  fill: none;
+  stroke-width: 26px;
+  stroke: rgba(34, 40, 49, 0.9);
+  stroke-linecap: round;
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+}
+
+.hamburger svg path.hamburger__top, .hamburger svg path.hamburger__bottom {
+  stroke-dasharray: 240px 950px;
+}
+
+.hamburger svg path.hamburger__middle {
+  stroke-dasharray: 240px 240px;
+}
+
+.hamburger--cross path.hamburger__top, .hamburger--cross path.hamburger__bottom {
+  stroke-dashoffset: -650px;
+}
+
+.hamburger--cross path.hamburger__middle {
+  stroke-dashoffset: -215px;
+  stroke-dasharray: 1px 220px;
+}
+/*# sourceMappingURL=main.css.map */

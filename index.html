@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Project Kappa | Nikos Rentas</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__bar">
+        <h3 class="nav__title">Project Kappa</h3>
+        <div class="nav__links">ena dio tria</div>
+      </div>
+      <div class="nav__hamburger">
+        <div class="hamburger">
+          <svg viewBox="320 100 340 600" class="hamburger__svg">
+            <path
+              d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+              class="hamburger__top"
+            ></path>
+            <path d="M300,320 L490,320" class="hamburger__middle"></path>
+            <path
+              d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+              class="hamburger__bottom"
+              transform="translate(480, 320) scale(1, -1) translate(-480, -318) "
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gooey navigation bar effect: svg decleration-->
+    <svg>
+      <defs>
+        <filter id="gooey">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+          <feColorMatrix
+            in="blur"
+            type="matrix"
+            values="1 0 0 0 0 
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 18 -8"
+            result="colormatrix"
+          />
+          <feBlend in="SourceGraphic" in2="colormatrix" />
+        </filter>
+      </defs>
+    </svg>
+    <script src="./scripts/navigation.js"></script>
+  </body>
+</html>
