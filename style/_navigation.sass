@@ -1,9 +1,12 @@
+$navigation-bar-color: 	#2A2E35
+$hamburger-color: #F97D3E
+$orange-color: #F97D3E
 
 .nav
   position: relative
   filter: url("#gooey")
   &__bar
-    background-color: #fff
+    background-color: $navigation-bar-color
     transition: transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
     height: 60px
     display: flex
@@ -11,26 +14,29 @@
     justify-content: space-around
     transform: translateY(-70px)
     border-radius: 5px
+    align-items: center
     &--drop-menu
       transform: translateY(-5px)
   &__hamburger
     position: absolute
-    top: 5px
+    top: 15px
     right: 30px
-    width: 60px
-    height: 60px
+    width: 50px
+    height: 50px
     border-radius: 50%
-    background-color: #fff
     cursor: pointer
-    
+    transition: background-color 0.7s linear 
+    &--active
+      background-color: $navigation-bar-color
+
 .hamburger
   svg
-    width: 80px
-    height: 80px
+    width: 70px
+    height: 70px
   svg path
     fill: none
     stroke-width: 26px
-    stroke: $primary-bg-color
+    stroke: $hamburger-color
     stroke-linecap: round
     stroke-dashoffset: 0
     transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25),
