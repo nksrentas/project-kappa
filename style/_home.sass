@@ -2,16 +2,25 @@
 .personal-details
   display: flex
   flex-direction: row
-  // flex-wrap: wrap
+  flex-wrap: wrap
   justify-content: space-around
   width: 100%
   &__identity
-    flex-basis: 1
-    width: 100%
+    flex-grow: 2
     display: flex
     flex-direction: column
-    border: 1px solid black
+  &__name
+    margin-left: 24px
+    margin-top: 54px
+    h1
+      color: $secondary-text-color
+      font-size: 59px
+  &__occupation
+    margin-left: 24px
+    font-size: 24px
   &__particle-photo
-    width: 100%
-    flex-basis: 2
-    border: 1px solid white
+    flex-grow: 10
+    canvas 
+      width: 100%
+      height: 100%
+
