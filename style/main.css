@@ -252,4 +252,27 @@ section {
   bottom: 150px;
   fill: rgba(255, 192, 110, 0.05);
 }
+
+.blob-card__text {
+  margin-top: 50px;
+  position: absolute;
+  z-index: 100;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.blob-card__text-promo {
+  font-size: 30px;
+  color: black;
+}
+
+.blob-card__text-social ul {
+  margin-top: 46px;
+  list-style: none;
+}
+
+.blob-card__text-social ul li {
+  display: inline-block;
+  color: black;
+}
 /*# sourceMappingURL=main.css.map */
