@@ -135,4 +135,121 @@ section {
   stroke-dashoffset: -215px;
   stroke-dasharray: 1px 220px;
 }
+
+.personal-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.personal-details__identity {
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+}
+
+.personal-details__particle-photo {
+  width: 100%;
+  -ms-flex-preferred-size: 2;
+      flex-basis: 2;
+  border: 1px solid white;
+}
+
+.blob-card {
+  padding: 200px;
+  margin-top: 54px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.blob-card__layer-one {
+  position: absolute;
+  z-index: 3;
+  fill: rgba(249, 125, 62, 0.9);
+}
+
+.blob-card__layer-two {
+  position: absolute;
+  z-index: 2;
+  fill: rgba(255, 192, 110, 0.3);
+}
+
+.blob-card__layer-three {
+  position: absolute;
+  z-index: 1;
+  fill: rgba(255, 192, 110, 0.14);
+}
+
+.blob-card__random-blob-one {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: -100px;
+  fill: rgba(255, 192, 110, 0.14);
+}
+
+.blob-card__random-blob-one-shadow {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: -90px;
+  fill: rgba(255, 192, 110, 0.05);
+}
+
+.blob-card__random-blob-two {
+  position: absolute;
+  z-index: 2;
+  right: -100px;
+  bottom: 20px;
+  fill: rgba(255, 192, 110, 0.14);
+}
+
+.blob-card__random-blob-two-shadow {
+  position: absolute;
+  z-index: 1;
+  right: -90px;
+  bottom: 20px;
+  fill: rgba(255, 192, 110, 0.05);
+}
+
+.blob-card__random-blob-three {
+  position: absolute;
+  z-index: 2;
+  right: 470px;
+  bottom: 150px;
+  fill: rgba(255, 192, 110, 0.14);
+}
+
+.blob-card__random-blob-three-shadow {
+  position: absolute;
+  z-index: 1;
+  right: 460px;
+  bottom: 150px;
+  fill: rgba(255, 192, 110, 0.05);
+}
 /*# sourceMappingURL=main.css.map */

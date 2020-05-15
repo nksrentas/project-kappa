@@ -1,0 +1,64 @@
+$blob-color: rgba(249, 125, 62, .9)
+$blob-shade-one: rgba(255,192,110,0.3)
+$blob-shade-two: rgba(255,192,110,0.14)
+$random-blob-color: rgba(255,192,110,0.14)
+$random-blob-shadow: rgba(255,192,110,0.05)
+
+
+.blob-card
+  padding: 200px
+  margin-top: 54px
+  margin-bottom: 24px
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  overflow: hidden
+  &__layer-one
+    position: absolute
+    z-index: 3
+    fill: $blob-color
+  &__layer-two
+    position: absolute
+    z-index: 2
+    fill: $blob-shade-one
+  &__layer-three
+    position: absolute
+    z-index: 1
+    fill: $blob-shade-two
+  &__random-blob-one
+    position: absolute
+    z-index: 2
+    top: 20px
+    left: -100px
+    fill: $random-blob-color
+  &__random-blob-one-shadow
+    position: absolute
+    z-index: 1
+    top: 20px
+    left: -90px
+    fill: $random-blob-shadow
+  &__random-blob-two
+    position: absolute
+    z-index: 2
+    right: -100px
+    bottom: 20px
+    fill: $random-blob-color
+  &__random-blob-two-shadow
+    position: absolute
+    z-index: 1
+    right: -90px
+    bottom: 20px
+    fill: $random-blob-shadow
+  &__random-blob-three
+    position: absolute
+    z-index: 2
+    right: 470px
+    bottom: 150px
+    fill: $random-blob-color
+  &__random-blob-three-shadow
+    position: absolute
+    z-index: 1
+    right: 460px
+    bottom: 150px
+    fill: $random-blob-shadow

@@ -10,7 +10,7 @@
   <body>
     <nav class="nav">
       <div class="nav__bar">
-        <a href="#"><h1 class="nav__title">Project Kappa</h1></a>
+        <a href="#" class="nav__title"><h1>Project Kappa</h1></a>
         <div class="nav__links">
           <ul>
             <li>
@@ -40,9 +40,181 @@
       </div>
     </nav>
     <main>
-      <section></section>
-      <section></section>
+      <!-- Start of personal informations -->
+      <section class="personal-details">
+        <div class="personal-details__identity">
+          <div class="personal-details__name">Nikos Rentas</div>
+          <div class="personal-details__occupation">
+            Full Stack Developer 🚀
+          </div>
+        </div>
+        <div class="personal-details__particle-photo">
+          <canvas></canvas>
+        </div>
+      </section>
+
+      <!-- Start of card of details -->
+      <section class="blob-card">
+        <svg
+          class="blob-card__layer-one"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1787.15"
+          height="1415.068"
+          viewBox="0 0 1787.15 1415.068"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            d="M565.4,199.107c302.028-137.725,844.712,0,844.712,0s514.656,84.568,303.478,309.277S852.444,950.553,565.4,1097.943,202,974.716,202,750.007,263.369,336.832,565.4,199.107Z"
+            transform="translate(140.113 -190.929) rotate(17)"
+          />
+        </svg>
+
+        <svg
+          class="blob-card__layer-two"
+          width="1865.27"
+          height="1390.65"
+          viewBox="0 0 1865.27 1390.65"
+        >
+          <defs>
+            <filter
+              id="blob-shade-one"
+              x="0"
+              y="0"
+              width="1865.27"
+              height="1390.65"
+              filterUnits="userSpaceOnUse"
+            >
+              <feOffset dy="3" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feFlood flood-opacity="0.161" />
+              <feComposite operator="in" in2="blur" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+          </defs>
+          <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#blob-shade-one)">
+            <path
+              d="M591.167,203.448c323.446-147.491,904.615,0,904.615,0s551.152,90.565,325,331.209S898.57,1008.182,591.167,1166.024,202,1034.058,202,793.414,267.721,350.94,591.167,203.448Z"
+              transform="translate(41.78 -167.91) rotate(11)"
+            />
+          </g>
+        </svg>
+
+        <svg
+          class="blob-card__layer-three"
+          width="1957.366"
+          height="1598.665"
+          viewBox="0 0 1957.366 1598.665"
+        >
+          <defs>
+            <filter
+              id="blob-shade-two"
+              x="0"
+              y="0"
+              width="1957.366"
+              height="1598.665"
+              filterUnits="userSpaceOnUse"
+            >
+              <feOffset dy="3" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feFlood flood-opacity="0.161" />
+              <feComposite operator="in" in2="blur" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+          </defs>
+          <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#blob-shade-two)">
+            <path
+              d="M591.167,203.448c323.446-147.491,904.615,0,904.615,0s551.152,90.565,325,331.209S898.57,1008.182,591.167,1166.024,202,1034.058,202,793.414,267.721,350.94,591.167,203.448Z"
+              transform="translate(233.37 -192.67) rotate(20)"
+            />
+          </g>
+        </svg>
+
+        <!-- Random blobs (currently 3 random blobs) -->
+
+        <!-- Blob one -->
+        <svg
+          class="blob-card__random-blob-one"
+          width="218.479"
+          height="203.166"
+          viewBox="0 0 218.479 203.166"
+        >
+          <path
+            id="top-left"
+            d="M73.055-3.11C79.923,8.952,80.091,23.36,77.745,38.6s-7.036,31.5-24.962,52.6c-17.925,21.276-49.253,47.243-69.189,41.044-20.1-6.2-28.982-44.73-35.013-80.916-5.863-36.354-9.214-70.362,6.2-84.434s49.253-8.041,73.21,0C51.946-25.224,66.019-15.339,73.055-3.11Z"
+            transform="matrix(0.485, 0.875, -0.875, 0.485, 143.797, 69.409)"
+          />
+        </svg>
+        <!-- Blob one shadow -->
+        <svg
+          class="blob-card__random-blob-one-shadow"
+          width="218.479"
+          height="203.166"
+          viewBox="0 0 218.479 203.166"
+        >
+          <path
+            id="top-left-shadow"
+            d="M73.055-3.11C79.923,8.952,80.091,23.36,77.745,38.6s-7.036,31.5-24.962,52.6c-17.925,21.276-49.253,47.243-69.189,41.044-20.1-6.2-28.982-44.73-35.013-80.916-5.863-36.354-9.214-70.362,6.2-84.434s49.253-8.041,73.21,0C51.946-25.224,66.019-15.339,73.055-3.11Z"
+            transform="matrix(0.485, 0.875, -0.875, 0.485, 143.797, 69.409)"
+          />
+        </svg>
+
+        <!-- Blob two -->
+        <svg
+          class="blob-card__random-blob-two"
+          width="208.751"
+          height="220.302"
+          viewBox="0 0 208.751 220.302"
+        >
+          <path
+            id="bottom-right"
+            d="M73.055-3.11C79.923,8.952,80.091,23.36,77.745,38.6s-7.036,31.5-24.962,52.6c-17.925,21.276-49.253,47.243-69.189,41.044-20.1-6.2-28.982-44.73-35.013-80.916-5.863-36.354-9.214-70.362,6.2-84.434s49.253-8.041,73.21,0C51.946-25.224,66.019-15.339,73.055-3.11Z"
+            transform="matrix(0.839, 0.545, -0.545, 0.839, 119.783, 65.519)"
+          />
+        </svg>
+        <!-- Blob two shadow -->
+        <svg
+          class="blob-card__random-blob-two-shadow"
+          width="208.751"
+          height="220.302"
+          viewBox="0 0 208.751 220.302"
+        >
+          <path
+            id="bottom-right-bg"
+            d="M73.055-3.11C79.923,8.952,80.091,23.36,77.745,38.6s-7.036,31.5-24.962,52.6c-17.925,21.276-49.253,47.243-69.189,41.044-20.1-6.2-28.982-44.73-35.013-80.916-5.863-36.354-9.214-70.362,6.2-84.434s49.253-8.041,73.21,0C51.946-25.224,66.019-15.339,73.055-3.11Z"
+            transform="matrix(0.839, 0.545, -0.545, 0.839, 119.783, 65.519)"
+          />
+        </svg>
+
+        <!-- Blob three -->
+        <svg
+          class="blob-card__random-blob-three"
+          width="220.722"
+          height="216.847"
+          viewBox="0 0 220.722 216.847"
+        >
+          <path
+            id="bottom-left"
+            d="M73.055-3.11C79.923,8.952,80.091,23.36,77.745,38.6s-7.036,31.5-24.962,52.6c-17.925,21.276-49.253,47.243-69.189,41.044-20.1-6.2-28.982-44.73-35.013-80.916-5.863-36.354-9.214-70.362,6.2-84.434s49.253-8.041,73.21,0C51.946-25.224,66.019-15.339,73.055-3.11Z"
+            transform="translate(137.474 69.768) rotate(49)"
+          />
+        </svg>
+
+        <!-- Blob three shadow -->
+        <svg
+          class="blob-card__random-blob-three-shadow"
+          width="220.722"
+          height="216.847"
+          viewBox="0 0 220.722 216.847"
+        >
+          <path
+            id="bottom-left-bg"
+            d="M73.055-3.11C79.923,8.952,80.091,23.36,77.745,38.6s-7.036,31.5-24.962,52.6c-17.925,21.276-49.253,47.243-69.189,41.044-20.1-6.2-28.982-44.73-35.013-80.916-5.863-36.354-9.214-70.362,6.2-84.434s49.253-8.041,73.21,0C51.946-25.224,66.019-15.339,73.055-3.11Z"
+            transform="translate(137.474 69.768) rotate(49)"
+          />
+        </svg>
+      </section>
     </main>
+    <footer></footer>
     <!-- Gooey navigation bar effect -->
     <svg>
       <defs>
