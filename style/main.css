@@ -296,4 +296,9 @@ section {
   display: inline-block;
   color: black;
 }
+
+.brief {
+  width: 100%;
+  position: absolute;
+}
 /*# sourceMappingURL=main.css.map */
