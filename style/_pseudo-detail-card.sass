@@ -6,10 +6,10 @@ $random-blob-shadow: rgba(255,192,110,0.05)
 
 
 .blob-card
-  border: 1px solid white
+  height: 80vh
   display: flex
   justify-content: center
-  align-content: center
+  align-items: baseline
   position: relative
   overflow: hidden
   &__random-blob-one
@@ -49,18 +49,31 @@ $random-blob-shadow: rgba(255,192,110,0.05)
     bottom: 150px
     fill: $random-blob-shadow
   &__text 
-    text-align: left
-    margin-top: 50px
-    position: absolute
-    z-index: 100
-    align-self: flex-start
+    height: 100%
+    // padding-top: 24px
+    display: flex
+    justify-content: space-evenly
+    flex-direction: column
+    text-align: center
     &-promo
-      font-size: 30px
-      color: black
+      font-size: 49px
+      color: $secondary-text-color
     &-social 
+      width: 100%
+      align-self: center
       ul
         margin-top: 46px
         list-style: none
+        display: flex
+        justify-content: center
         li
-          display: inline-block
-          color: black
+          position: relative
+          z-index: 100000
+          width: 50px
+          height: 50px
+          margin-right: 66px
+          svg
+            fill: white
+          &:hover
+            filter: drop-shadow(0 0 0.75rem $orange-color);
+            cursor: pointer
