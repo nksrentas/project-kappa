@@ -3,7 +3,9 @@ $blob-shade-one: rgba(255,192,110,0.3)
 $blob-shade-two: rgba(255,192,110,0.14)
 $random-blob-color: rgba(255,192,110,0.14)
 $random-blob-shadow: rgba(255,192,110,0.05)
-
+$animation-time: 9s
+$animation-function: ease-in-out
+$animation-delay: 2s
 
 .blob-card
   height: 80vh
@@ -18,40 +20,42 @@ $random-blob-shadow: rgba(255,192,110,0.05)
     top: 20px
     left: -100px
     fill: $random-blob-color
-    animation: floating-right 10s ease-in-out infinite
+    animation: floating-right $animation-time $animation-function infinite
   &__random-blob-one-shadow
     position: absolute
     z-index: 1
     top: 20px
     left: -90px
     fill: $random-blob-shadow
-    animation: floating-right 10s ease-in-out infinite
+    animation: floating-right $animation-time $animation-function infinite
   &__random-blob-two
     position: absolute
     z-index: 2
     right: -100px
     bottom: 20px
     fill: $random-blob-color
-    animation: floating-diagonal 10s ease-in-out infinite
+    animation: floating-diagonal $animation-time $animation-function infinite
   &__random-blob-two-shadow
     position: absolute
     z-index: 1
     right: -90px
     bottom: 20px
     fill: $random-blob-shadow
-    animation: floating-diagonal 10s ease-in-out infinite
+    animation: floating-diagonal $animation-time $animation-function $animation-delay infinite
   &__random-blob-three
     position: absolute
     z-index: 2
     right: 470px
     bottom: 150px
     fill: $random-blob-color
+    animation: floating-top $animation-time $animation-function $animation-delay infinite
   &__random-blob-three-shadow
     position: absolute
     z-index: 1
     right: 460px
     bottom: 150px
     fill: $random-blob-shadow
+    animation: floating-top $animation-time $animation-function infinite
   &__text 
     height: 100%
     // padding-top: 24px
@@ -76,7 +80,7 @@ $random-blob-shadow: rgba(255,192,110,0.05)
           width: 50px
           height: 50px
           margin-right: 66px
-          transition: transform .5s ease-in-out
+          transition: transform .5s $animation-function
           svg
             fill: white
           &:hover
@@ -101,3 +105,10 @@ $random-blob-shadow: rgba(255,192,110,0.05)
     transform: translate(0,0)
 
 
+@keyframes floating-top
+  0%
+    transform: translateY(0)
+  50% 
+    transform: translateY(15px)
+  100%
+    transform: translateY(0)
