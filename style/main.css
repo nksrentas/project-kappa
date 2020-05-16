@@ -196,38 +196,17 @@ section {
 }
 
 .blob-card {
-  padding: 200px;
-  margin-top: 54px;
-  margin-bottom: 24px;
+  border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   position: relative;
   overflow: hidden;
-}
-
-.blob-card__layer-one {
-  position: absolute;
-  z-index: 3;
-  fill: rgba(249, 125, 62, 0.9);
-}
-
-.blob-card__layer-two {
-  position: absolute;
-  z-index: 2;
-  fill: rgba(255, 192, 110, 0.3);
-}
-
-.blob-card__layer-three {
-  position: absolute;
-  z-index: 1;
-  fill: rgba(255, 192, 110, 0.14);
 }
 
 .blob-card__random-blob-one {
