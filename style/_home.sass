@@ -9,18 +9,119 @@
     flex-grow: 2
     display: flex
     flex-direction: column
+    padding-left: 24px
   &__name
-    margin-left: 24px
     margin-top: 54px
     h1
       color: $secondary-text-color
       font-size: 59px
   &__occupation
-    margin-left: 24px
     font-size: 24px
+  &__slider
+    padding-top: 16px
+    padding-bottom: 36px
+    width: 90%
+    align-self: flex-end
+    input
+      opacity: 0.7
+      &:hover
+        opacity: 1
   &__particle-photo
     flex-grow: 10
     canvas 
       width: 100%
       height: 100%
+      position: relative
+      z-index: 10000
 
+$track-color: #2A2E35
+$thumb-color: #424242
+$thumb-color-gradient:  radial-gradient(circle, rgba(249,125,62,0.9556197478991597) 0%, rgba(66,66,66,1) 77%)
+
+
+$thumb-radius: 50%
+$thumb-height: 30px
+$thumb-width: 30px
+$thumb-shadow-size: 1px
+$thumb-shadow-blur: 1px
+$thumb-shadow-color: #111
+$thumb-border-width: 1px
+// $thumb-border-color: white
+
+$track-width: 70%
+$track-height: 10px
+$track-shadow-size: 2px
+$track-shadow-blur: 2px
+$track-shadow-color: #222
+$track-border-width: 0px
+$track-border-color: black
+
+$track-radius: 1px
+$contrast: 5%
+
+=shadow($shadow-size, $shadow-blur, $shadow-color)
+  box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0px 0px $shadow-size lighten($shadow-color, 5%)
+
+=track
+  width: $track-width
+  height: $track-height
+  cursor: pointer
+  animate: 0.2s
+
+=thumb
+  +shadow($thumb-shadow-size, $thumb-shadow-blur, $thumb-shadow-color)
+
+  height: $thumb-height
+  width: $thumb-width
+  border-radius: $thumb-radius
+  background: $thumb-color
+  background: $thumb-color-gradient
+  cursor: pointer
+
+input[type=range]
+  -webkit-appearance: none
+  margin: ($thumb-height / 2) 0
+  width: $track-width
+
+  &:focus
+    outline: none
+
+  &::-webkit-slider-runnable-track
+    +track
+
+    background: $track-color
+    border-radius: $track-radius
+
+  &::-webkit-slider-thumb
+    +thumb
+
+    -webkit-appearance: none
+    margin-top: (-$track-border-width * 2 + $track-height) / 2 - $thumb-height / 2
+
+  &::-moz-range-track
+    +track
+    background: $track-color
+    border-radius: $track-radius
+
+  &::-moz-range-thumb
+    +thumb
+
+  &::-ms-track
+    +track
+
+    background: transparent
+    border-color: transparent
+    border-width: $thumb-width 0
+    color: transparent
+
+  &::-ms-fill-lower
+    background: darken($track-color, $contrast)
+    border-radius: $track-radius * 2
+
+  &::-ms-fill-upper
+    background: $track-color
+    border-radius: $track-radius * 2
+
+
+  &::-ms-thumb
+    +thumb

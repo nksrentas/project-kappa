@@ -88,6 +88,10 @@ section {
   margin-right: 16px;
 }
 
+.nav__links ul li:hover {
+  text-shadow: 0px 0px 10px #f97d3e;
+}
+
 .nav__links ul li a {
   text-decoration: none;
 }
@@ -171,10 +175,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 24px;
 }
 
 .personal-details__name {
-  margin-left: 24px;
   margin-top: 54px;
 }
 
@@ -184,8 +188,23 @@ section {
 }
 
 .personal-details__occupation {
-  margin-left: 24px;
   font-size: 24px;
+}
+
+.personal-details__slider {
+  padding-top: 16px;
+  padding-bottom: 36px;
+  width: 90%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.personal-details__slider input {
+  opacity: 0.7;
+}
+
+.personal-details__slider input:hover {
+  opacity: 1;
 }
 
 .personal-details__particle-photo {
@@ -197,6 +216,90 @@ section {
 .personal-details__particle-photo canvas {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 10000;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 15px 0;
+  width: 70%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 70%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #2A2E35;
+  border-radius: 1px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-box-shadow: 1px 1px 1px #111, 0px 0px 1px #1e1e1e;
+          box-shadow: 1px 1px 1px #111, 0px 0px 1px #1e1e1e;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #424242;
+  background: radial-gradient(circle, rgba(249, 125, 62, 0.95562) 0%, #424242 77%);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 70%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #2A2E35;
+  border-radius: 1px;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #111, 0px 0px 1px #1e1e1e;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #424242;
+  background: radial-gradient(circle, rgba(249, 125, 62, 0.95562) 0%, #424242 77%);
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 70%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 30px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #1f2227;
+  border-radius: 2px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #2A2E35;
+  border-radius: 2px;
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #111, 0px 0px 1px #1e1e1e;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #424242;
+  background: radial-gradient(circle, rgba(249, 125, 62, 0.95562) 0%, #424242 77%);
+  cursor: pointer;
 }
 
 .blob-card {
