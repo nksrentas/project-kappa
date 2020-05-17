@@ -20,42 +20,48 @@ $animation-delay: 2s
     top: 20px
     left: -100px
     fill: $random-blob-color
-    animation: floating-right $animation-time $animation-function infinite
+    &--animation-float-right
+      animation: floating-right $animation-time $animation-function infinite
   &__random-blob-one-shadow
     position: absolute
     z-index: 1
     top: 20px
     left: -90px
     fill: $random-blob-shadow
-    animation: floating-right $animation-time $animation-function infinite
+    &--animation-float-right
+      animation: floating-right $animation-time $animation-function infinite
   &__random-blob-two
     position: absolute
     z-index: 2
     right: -100px
     bottom: 20px
     fill: $random-blob-color
-    animation: floating-diagonal $animation-time $animation-function infinite
+    &--animation-float-diagonal
+      animation: floating-diagonal $animation-time $animation-function infinite
   &__random-blob-two-shadow
     position: absolute
     z-index: 1
     right: -90px
     bottom: 20px
     fill: $random-blob-shadow
-    animation: floating-diagonal $animation-time $animation-function $animation-delay infinite
+    &--animation-float-diagonal
+      animation: floating-diagonal $animation-time $animation-function $animation-delay infinite
   &__random-blob-three
     position: absolute
     z-index: 2
     right: 470px
     bottom: 150px
     fill: $random-blob-color
-    animation: floating-top $animation-time $animation-function $animation-delay infinite
+    &--animation-float-top
+      animation: floating-top $animation-time $animation-function $animation-delay infinite
   &__random-blob-three-shadow
     position: absolute
     z-index: 1
     right: 460px
     bottom: 150px
     fill: $random-blob-shadow
-    animation: floating-top $animation-time $animation-function infinite
+    &--animation-float-top
+      animation: floating-top $animation-time $animation-function infinite
   &__text 
     height: 100%
     display: flex

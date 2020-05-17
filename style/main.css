@@ -220,6 +220,9 @@ section {
   top: 20px;
   left: -100px;
   fill: rgba(255, 192, 110, 0.14);
+}
+
+.blob-card__random-blob-one--animation-float-right {
   -webkit-animation: floating-right 9s ease-in-out infinite;
           animation: floating-right 9s ease-in-out infinite;
 }
@@ -230,6 +233,9 @@ section {
   top: 20px;
   left: -90px;
   fill: rgba(255, 192, 110, 0.05);
+}
+
+.blob-card__random-blob-one-shadow--animation-float-right {
   -webkit-animation: floating-right 9s ease-in-out infinite;
           animation: floating-right 9s ease-in-out infinite;
 }
@@ -240,6 +246,9 @@ section {
   right: -100px;
   bottom: 20px;
   fill: rgba(255, 192, 110, 0.14);
+}
+
+.blob-card__random-blob-two--animation-float-diagonal {
   -webkit-animation: floating-diagonal 9s ease-in-out infinite;
           animation: floating-diagonal 9s ease-in-out infinite;
 }
@@ -250,6 +259,9 @@ section {
   right: -90px;
   bottom: 20px;
   fill: rgba(255, 192, 110, 0.05);
+}
+
+.blob-card__random-blob-two-shadow--animation-float-diagonal {
   -webkit-animation: floating-diagonal 9s ease-in-out 2s infinite;
           animation: floating-diagonal 9s ease-in-out 2s infinite;
 }
@@ -260,6 +272,9 @@ section {
   right: 470px;
   bottom: 150px;
   fill: rgba(255, 192, 110, 0.14);
+}
+
+.blob-card__random-blob-three--animation-float-top {
   -webkit-animation: floating-top 9s ease-in-out 2s infinite;
           animation: floating-top 9s ease-in-out 2s infinite;
 }
@@ -270,6 +285,9 @@ section {
   right: 460px;
   bottom: 150px;
   fill: rgba(255, 192, 110, 0.05);
+}
+
+.blob-card__random-blob-three-shadow--animation-float-top {
   -webkit-animation: floating-top 9s ease-in-out infinite;
           animation: floating-top 9s ease-in-out infinite;
 }
