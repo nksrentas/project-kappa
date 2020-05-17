@@ -32,96 +32,47 @@
       width: 100%
       height: 100%
       position: relative
-      z-index: 10000
+      z-index: -10
 
-$track-color: #2A2E35
-$thumb-color: #424242
-$thumb-color-gradient:  radial-gradient(circle, rgba(249,125,62,0.9556197478991597) 0%, rgba(66,66,66,1) 77%)
+$spinTime: 3
 
 
-$thumb-radius: 50%
-$thumb-height: 30px
-$thumb-width: 30px
-$thumb-shadow-size: 1px
-$thumb-shadow-blur: 1px
-$thumb-shadow-color: #111
-$thumb-border-width: 1px
-// $thumb-border-color: white
+input
+  display: none
 
-$track-width: 70%
-$track-height: 10px
-$track-shadow-size: 2px
-$track-shadow-blur: 2px
-$track-shadow-color: #222
-$track-border-width: 0px
-$track-border-color: black
+  + div + div
+    width: 280px
+    margin-top: 10px
 
-$track-radius: 1px
-$contrast: 5%
+    label
+      display: block
+      padding: 20px 10px
+      text-align: center
+      transition: all 0.15s ease-in-out
+      background: $primary-bg-color
+      border-radius: 10px
+      box-sizing: border-box
+      width: 48%
+      font-size: 64px
+      cursor: pointer
 
-=shadow($shadow-size, $shadow-blur, $shadow-color)
-  box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0px 0px $shadow-size lighten($shadow-color, 5%)
+      &:first-child
+        float: left
+        box-shadow: inset 0 0 0 4px #F97D3E, 0 15px 15px -10px rgba(darken(#F97D3E, 10%), 0.375)
 
-=track
-  width: $track-width
-  height: $track-height
-  cursor: pointer
-  animate: 0.2s
+      &:last-child
+        float: right
 
-=thumb
-  +shadow($thumb-shadow-size, $thumb-shadow-blur, $thumb-shadow-color)
+  &#portrait:checked ~ div + div label
+    &:first-child
+      box-shadow: inset 0 0 0 4px #F97D3E, 0 15px 15px -10px rgba(darken(#F97D3E, 10%), 0.375)
 
-  height: $thumb-height
-  width: $thumb-width
-  border-radius: $thumb-radius
-  background: $thumb-color
-  background: $thumb-color-gradient
-  cursor: pointer
+    &:last-child
+      box-shadow: inset 0 0 0 0px #F97D3E, 0 10px 15px -20px rgba(#F97D3E, 0)
 
-input[type=range]
-  -webkit-appearance: none
-  margin: ($thumb-height / 2) 0
-  width: $track-width
+  &#crazy:checked ~ div + div label
+    &:first-child
+      box-shadow: inset 0 0 0 0px #F97D3E, 0 10px 15px -20px rgba(#F97D3E, 0)
 
-  &:focus
-    outline: none
-
-  &::-webkit-slider-runnable-track
-    +track
-
-    background: $track-color
-    border-radius: $track-radius
-
-  &::-webkit-slider-thumb
-    +thumb
-
-    -webkit-appearance: none
-    margin-top: (-$track-border-width * 2 + $track-height) / 2 - $thumb-height / 2
-
-  &::-moz-range-track
-    +track
-    background: $track-color
-    border-radius: $track-radius
-
-  &::-moz-range-thumb
-    +thumb
-
-  &::-ms-track
-    +track
-
-    background: transparent
-    border-color: transparent
-    border-width: $thumb-width 0
-    color: transparent
-
-  &::-ms-fill-lower
-    background: darken($track-color, $contrast)
-    border-radius: $track-radius * 2
-
-  &::-ms-fill-upper
-    background: $track-color
-    border-radius: $track-radius * 2
-
-
-  &::-ms-thumb
-    +thumb
+    &:last-child
+      box-shadow: inset 0 0 0 4px #F97D3E, 0 15px 15px -10px rgba(darken(#F97D3E, 10%), 0.375)
