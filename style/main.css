@@ -199,11 +199,6 @@ section {
           flex-grow: 10;
 }
 
-.personal-details__particle-photo #upper-monitor {
-  position: absolute;
-  z-index: 1111111;
-}
-
 .blob-card {
   height: 80vh;
   display: -webkit-box;
