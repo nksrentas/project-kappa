@@ -206,8 +206,8 @@ section {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-transform-origin: bottom;
@@ -221,8 +221,8 @@ section {
             transform: translate(452.173px, 33.499px);
   }
   to {
-    -webkit-transform: translate(452.173px, 33.499px) rotate(-7deg);
-            transform: translate(452.173px, 33.499px) rotate(-7deg);
+    -webkit-transform: translate(452.173px, 33.499px) rotate(-4deg);
+            transform: translate(452.173px, 33.499px) rotate(-4deg);
   }
 }
 
@@ -232,8 +232,8 @@ section {
             transform: translate(452.173px, 33.499px);
   }
   to {
-    -webkit-transform: translate(452.173px, 33.499px) rotate(-7deg);
-            transform: translate(452.173px, 33.499px) rotate(-7deg);
+    -webkit-transform: translate(452.173px, 33.499px) rotate(-4deg);
+            transform: translate(452.173px, 33.499px) rotate(-4deg);
   }
 }
 
@@ -244,8 +244,8 @@ section {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-transform-origin: bottom;
@@ -259,8 +259,8 @@ section {
             transform: translate(452.173px, 33.499px);
   }
   to {
-    -webkit-transform: translate(452.173px, 33.499px) rotate(-13deg);
-            transform: translate(452.173px, 33.499px) rotate(-13deg);
+    -webkit-transform: translate(452.173px, 33.499px) rotate(-7deg);
+            transform: translate(452.173px, 33.499px) rotate(-7deg);
   }
 }
 
@@ -270,8 +270,8 @@ section {
             transform: translate(452.173px, 33.499px);
   }
   to {
-    -webkit-transform: translate(452.173px, 33.499px) rotate(-13deg);
-            transform: translate(452.173px, 33.499px) rotate(-13deg);
+    -webkit-transform: translate(452.173px, 33.499px) rotate(-7deg);
+            transform: translate(452.173px, 33.499px) rotate(-7deg);
   }
 }
 
@@ -282,8 +282,8 @@ section {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-transform-origin: bottom;
@@ -297,8 +297,8 @@ section {
             transform: translate(452.173px, 33.499px);
   }
   to {
-    -webkit-transform: translate(452.173px, 33.499px) rotate(-10deg);
-            transform: translate(452.173px, 33.499px) rotate(-10deg);
+    -webkit-transform: translate(452.173px, 33.499px) rotate(-6deg);
+            transform: translate(452.173px, 33.499px) rotate(-6deg);
   }
 }
 
@@ -308,8 +308,8 @@ section {
             transform: translate(452.173px, 33.499px);
   }
   to {
-    -webkit-transform: translate(452.173px, 33.499px) rotate(-10deg);
-            transform: translate(452.173px, 33.499px) rotate(-10deg);
+    -webkit-transform: translate(452.173px, 33.499px) rotate(-6deg);
+            transform: translate(452.173px, 33.499px) rotate(-6deg);
   }
 }
 
@@ -320,8 +320,8 @@ section {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-transform-origin: bottom;
@@ -335,8 +335,8 @@ section {
             transform: translate(611px, 94px);
   }
   to {
-    -webkit-transform: translate(611px, 94px) rotate(-7deg);
-            transform: translate(611px, 94px) rotate(-7deg);
+    -webkit-transform: translate(611px, 94px) rotate(-6deg);
+            transform: translate(611px, 94px) rotate(-6deg);
   }
 }
 
@@ -346,8 +346,8 @@ section {
             transform: translate(611px, 94px);
   }
   to {
-    -webkit-transform: translate(611px, 94px) rotate(-7deg);
-            transform: translate(611px, 94px) rotate(-7deg);
+    -webkit-transform: translate(611px, 94px) rotate(-6deg);
+            transform: translate(611px, 94px) rotate(-6deg);
   }
 }
 

@@ -22,7 +22,7 @@
     overflow: hidden
     flex-grow: 10
 
-@mixin animation-properties($origin,$duration: 7, $anim-fnc: ease-in-out, $direction: alternate)
+@mixin animation-properties($origin,$duration: 4, $anim-fnc: ease-in-out, $direction: alternate)
   animation-iteration-count: infinite
   animation-timing-function: $anim-fnc
   animation-duration: $duration + s
@@ -42,26 +42,26 @@
   animation-name: leaf-left
   @include animation-properties(bottom) 
 
-@include keyframes-mixin(leaf-left, 452.173px, 33.499px, -7deg)
+@include keyframes-mixin(leaf-left, 452.173px, 33.499px, -4deg)
 
 #leaf-right
   animation-name: leaf-right
   @include animation-properties(bottom) 
 
-@include keyframes-mixin(leaf-right, 452.173px, 33.499px, -13deg)
+@include keyframes-mixin(leaf-right, 452.173px, 33.499px, -7deg)
 
 #leaf-middle
   animation-name: leaf-middle
   @include animation-properties(bottom) 
 
-@include keyframes-mixin(leaf-middle, 452.173px, 33.499px, -10deg)
+@include keyframes-mixin(leaf-middle, 452.173px, 33.499px, -6deg)
 
 
 #stem-left, #stem-right, #stem-middle
   animation-name: stem
-  @include animation-properties(bottom, $duration: 7)
+  @include animation-properties(bottom, $duration: 4)
 
-@include keyframes-mixin(stem,611px, 94px, -7deg)
+@include keyframes-mixin(stem,611px, 94px, -6deg)
 
 #leg-right
   animation: leg 2s ease-in-out infinite
