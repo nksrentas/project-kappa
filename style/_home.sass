@@ -21,3 +21,39 @@
     position: relative
     overflow: hidden
     flex-grow: 10
+
+#leaf-left
+  transform-origin: top
+  animation: anim 2s linear infinite
+
+@keyframes anim
+  from
+    transform: translate(452.173px, 33.499px) rotate(0)
+  to
+    transform: translate(452.173px, 33.499px) rotate(-1deg)
+
+#leg-right
+  animation: leg 2s ease-in-out infinite
+  animation-direction: alternate
+  transform: translate(-24px, 48px)
+  transform-origin: top
+  transform-box: fill-box
+
+#shoe-right
+  animation: shoe 2s ease-in-out infinite
+  animation-direction: alternate
+  transform: translate(-214.407px, -81.13px)
+  transform-origin: center
+  transform-box: fill-box
+
+@keyframes leg 
+  from
+    transform: translate(-24px, 48px)
+  to
+    transform: translate(-24px, 48px) rotate(-2deg)
+
+@keyframes shoe
+  from
+    transform: translate(-214.407px, -81.13px)
+  to
+    transform: translate(-208px, -81.13px) rotate(-14deg)
