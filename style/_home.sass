@@ -1,4 +1,3 @@
-
 .personal-details
   display: flex
   flex-direction: row
@@ -17,10 +16,18 @@
       font-size: 59px
   &__occupation
     font-size: 24px
+    display: flex
   &__particle-photo
     position: relative
     overflow: hidden
     flex-grow: 10
+  &__rocket
+    width: 35px
+    height: 35px
+    margin-left: 16px
+    svg
+      width: inherit
+      height: inherit
 
 @mixin animation-properties($origin,$duration: 4, $anim-fnc: ease-in-out, $direction: alternate)
   animation-iteration-count: infinite

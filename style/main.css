@@ -189,6 +189,9 @@ section {
 
 .personal-details__occupation {
   font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .personal-details__particle-photo {
@@ -197,6 +200,17 @@ section {
   -webkit-box-flex: 10;
       -ms-flex-positive: 10;
           flex-grow: 10;
+}
+
+.personal-details__rocket {
+  width: 35px;
+  height: 35px;
+  margin-left: 16px;
+}
+
+.personal-details__rocket svg {
+  width: inherit;
+  height: inherit;
 }
 
 #leaf-left {
