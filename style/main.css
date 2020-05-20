@@ -886,11 +886,34 @@ footer {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 425px) {
+  .header-construction {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header-construction {
+    font-size: 18px;
+  }
+}
+
 .back-arrow {
   width: 30px;
   height: 30px;
   position: absolute;
   top: 24px;
   left: 24px;
+}
+
+@media screen and (max-width: 425px) {
+  .back-arrow {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+#workers {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

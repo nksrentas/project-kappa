@@ -9,6 +9,10 @@
   margin-bottom: 24px
   text-transform: uppercase
   text-decoration: underline
+  @include responsive(425px)
+    font-size: $header-one-ml
+  @include responsive(375px)
+    font-size: $header-four-ml
 
 .back-arrow
   width: 30px
@@ -16,3 +20,9 @@
   position: absolute
   top: 24px
   left: 24px
+  @include responsive(425px)
+    width: 15px
+    height: 15px
+
+#workers
+  width: 100%
