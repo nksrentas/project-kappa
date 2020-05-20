@@ -74,9 +74,54 @@ section {
           align-items: center;
 }
 
+@media screen and (max-width: 2560px) {
+  .nav__bar {
+    height: 100px;
+    -webkit-transform: translateY(-110px);
+            transform: translateY(-110px);
+  }
+  .nav__bar h1 {
+    font-size: 49px;
+  }
+  .nav__bar h4 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .nav__bar h1 {
+    font-size: 39px;
+  }
+  .nav__bar h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav__bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__bar h1 {
+    font-size: 29px;
+  }
+  .nav__bar h4 {
+    font-size: 18px;
+  }
+}
+
 .nav__bar--drop-menu {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+@media screen and (max-width: 2560px) {
+  .nav__bar--drop-menu {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
 }
 
 .nav__links ul {
@@ -106,6 +151,12 @@ section {
   cursor: pointer;
   -webkit-transition: background-color 0.7s linear;
   transition: background-color 0.7s linear;
+}
+
+@media screen and (max-width: 2560px) {
+  .nav__hamburger {
+    top: 55px;
+  }
 }
 
 .nav__hamburger--active {
@@ -178,6 +229,17 @@ section {
   padding-left: 24px;
 }
 
+@media screen and (max-width: 2560px) {
+  .personal-details__identity {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .personal-details__name {
   margin-top: 54px;
 }
@@ -194,7 +256,7 @@ section {
   display: flex;
 }
 
-.personal-details__particle-photo {
+.personal-details__svg-illustration {
   position: relative;
   overflow: hidden;
   -webkit-box-flex: 10;
@@ -740,7 +802,7 @@ footer {
           align-items: center;
 }
 
-h1 {
+.header-construction {
   margin-top: 24px;
   margin-bottom: 24px;
   text-transform: uppercase;

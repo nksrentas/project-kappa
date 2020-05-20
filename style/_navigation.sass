@@ -1,4 +1,4 @@
-
+@import responsive
 .nav
   position: relative
   filter: url("#gooey")
@@ -12,8 +12,29 @@
     transform: translateY(-70px)
     border-radius: 5px
     align-items: center
+    @include responsive(2560px)
+      height: 100px
+      transform: translateY(-110px)
+      h1
+        font-size: $header-one-4k
+      h4
+        font-size: $header-four-4k
+
+    @include responsive(1440px)
+      h1
+        font-size: $header-one-ll
+      h4
+        font-size: $header-four-ll
+    @include responsive(425px)
+      flex-direction: column
+      h1
+        font-size: $header-one-ml
+      h4
+        font-size: $header-four-ml
     &--drop-menu
       transform: translateY(-5px)
+      @include responsive(2560px)
+        transform: translateY(-10px)
   &__links ul
     list-style: none
     li
@@ -35,6 +56,9 @@
     border-radius: 50%
     cursor: pointer
     transition: background-color 0.7s linear 
+    @include responsive(2560px)
+      top: 55px
+
     &--active
       background-color: $navigation-bar-color
 
