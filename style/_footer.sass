@@ -17,13 +17,20 @@ footer
     position: absolute
     bottom: 40px
     text-align: center
-    font-size: $footer-text-size
     // padding-bottom: 8px
+    @include responsive(2560px)
+      font-size: $header-one-4k
+    @include responsive(2020px)
+      font-size: $header-four-ml
+    @include responsive(1024px)
+      font-size: $header-four-ml
+    @include responsive(320px)
+      font-size: 14px
     a
       font-family: $italic-font
       text-decoration: none
       &:hover
         text-shadow: $text-shadow
   &__svg
+    width: 100% 
     fill: $footer-bg-color
-  
