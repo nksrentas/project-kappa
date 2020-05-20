@@ -5,26 +5,33 @@
   &__bar
     background-color: $navigation-bar-color
     transition: transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-    height: 60px
+    height: 100px
     display: flex
     flex-direction: row
     justify-content: space-around
-    transform: translateY(-70px)
+    transform: translateY(-110px)
     border-radius: 5px
     align-items: center
     @include responsive(2560px)
-      height: 100px
-      transform: translateY(-110px)
       h1
         font-size: $header-one-4k
       h4
         font-size: $header-four-4k
-
-    @include responsive(1440px)
+    @include responsive(1440px, 768px)
+      height: 60px
+      transform: translateY(-70px)
       h1
         font-size: $header-one-ll
       h4
         font-size: $header-four-ll
+    @include responsive(1024px)
+      h1
+        font-size: 27px
+    @include responsive(7668px)
+      h1
+        font-size: $header-one-t
+      h4
+        font-size: $header-four-t
     @include responsive(425px)
       flex-direction: column
       h1
@@ -32,9 +39,9 @@
       h4
         font-size: $header-four-ml
     &--drop-menu
-      transform: translateY(-5px)
-      @include responsive(2560px)
-        transform: translateY(-10px)
+      transform: translateY(-10px)
+      @include responsive(1440px, 768px)
+        transform: translateY(-5px)
   &__links ul
     list-style: none
     li
@@ -49,15 +56,15 @@
 
   &__hamburger
     position: absolute
-    top: 15px
+    top: 55px
     right: 30px
     width: 50px
     height: 50px
     border-radius: 50%
     cursor: pointer
     transition: background-color 0.7s linear 
-    @include responsive(2560px)
-      top: 55px
+    @include responsive(1440px, 768px)
+      top: 15px
 
     &--active
       background-color: $navigation-bar-color
