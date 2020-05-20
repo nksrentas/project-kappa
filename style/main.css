@@ -219,12 +219,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
@@ -244,20 +242,15 @@ section {
   padding-left: 24px;
 }
 
-@media screen and (max-width: 2560px) {
-  .personal-details__identity {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 .personal-details__name h1 {
   color: #fff;
   font-size: 59px;
+}
+
+@media screen and (max-width: 425px) {
+  .personal-details__name h1 {
+    font-size: 29px;
+  }
 }
 
 .personal-details__occupation {
@@ -265,6 +258,12 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 425px) {
+  .personal-details__occupation {
+    font-size: 18px;
+  }
 }
 
 .personal-details__svg-illustration {
@@ -279,6 +278,13 @@ section {
   width: 35px;
   height: 35px;
   margin-left: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .personal-details__rocket {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .personal-details__rocket svg {
@@ -614,9 +620,37 @@ section {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .blob-card__text {
+    margin-left: 28px;
+    margin-right: 28px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .blob-card__text-promo {
   font-size: 49px;
   color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .blob-card__text-promo {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blob-card__text-promo {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .blob-card__text-promo {
+    font-size: 18px;
+  }
 }
 
 .blob-card__text-social {
@@ -647,6 +681,14 @@ section {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .blob-card__text-social ul li {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+  }
 }
 
 .blob-card__text-social ul li svg {

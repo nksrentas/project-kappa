@@ -68,9 +68,19 @@ $animation-delay: 2s
     justify-content: space-evenly
     flex-direction: column
     text-align: center
+    @include responsive(768px)
+      margin-left: 28px
+      margin-right: 28px
+      justify-content: center
     &-promo
-      font-size: 49px
+      font-size: $blob-text-font
       color: $secondary-text-color
+      @include responsive(1024px)
+        font-size: $blob-text-font-l
+      @include responsive(768px)
+        font-size: $blob-text-font-t
+      @include responsive(425px)
+        font-size: $blob-text-font-m
     &-social 
       width: 100%
       align-self: center
@@ -86,6 +96,10 @@ $animation-delay: 2s
           height: 50px
           margin-right: 66px
           transition: transform .5s $animation-function
+          @include responsive(768px)
+            width: 30px
+            height: 30px
+            margin-right: 30px
           svg
             fill: white
           &:hover
