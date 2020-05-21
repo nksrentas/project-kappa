@@ -292,24 +292,9 @@ section {
   height: inherit;
 }
 
-#animated-letters {
-  display: block;
-}
-
-@media screen and (max-width: 1194px) {
-  #animated-letters {
-    display: none;
-  }
-}
-
-#static-letters {
-  display: none;
-}
-
-@media screen and (max-width: 1194px) {
-  #static-letters {
-    display: block;
-  }
+#topoftop {
+  position: absolute;
+  z-index: 11;
 }
 
 #leaf-left {
