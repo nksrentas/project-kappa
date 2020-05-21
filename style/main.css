@@ -228,6 +228,24 @@ section {
   text-align: center;
 }
 
+@media (min-width: 840px) and (max-width: 2024px) and (orientation: landscape) {
+  .personal-details {
+    height: 120vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 840px) and (orientation: landscape) {
+  .personal-details {
+    height: 260vh;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) and (orientation: portrait) {
+  .personal-details {
+    height: 110vh;
+  }
+}
+
 .personal-details__identity {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;

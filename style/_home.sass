@@ -8,6 +8,22 @@
   // width: 100%
   // align-items: center
   text-align: center
+  // @media screen and (max-width: 1024px) and (orientation: landscape)
+  //   height: 260vh
+  // @media screen and (max-width: 768px) and (orientation: landscape)
+  //   height: 270vh
+  // @media screen and (max-width: 425px) and (orientation: landscape)
+  //   height: 250vh
+  @media (min-width: 840px) and (max-width: 2024px) and (orientation: landscape)
+    height: 120vh
+  @media (min-width: 768px) and (max-width: 840px) and (orientation: landscape)
+    height: 260vh
+  @media screen and (max-width: 768px) and (min-width: 425px) and (orientation: portrait)
+    height: 110vh
+  
+
+
+
   &__identity
     flex-grow: 2
     display: flex
