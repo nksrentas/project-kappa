@@ -226,6 +226,9 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .personal-details__identity {
@@ -267,6 +270,7 @@ section {
 }
 
 .personal-details__svg-illustration {
+  width: 95vw;
   position: relative;
   overflow: hidden;
   -webkit-box-flex: 10;
