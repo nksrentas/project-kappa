@@ -436,8 +436,8 @@ section {
             transform: translate(611px, 94px);
   }
   to {
-    -webkit-transform: translate(611px, 94px) rotate(-6deg);
-            transform: translate(611px, 94px) rotate(-6deg);
+    -webkit-transform: translate(611px, 94px) rotate(-4deg);
+            transform: translate(611px, 94px) rotate(-4deg);
   }
 }
 
@@ -447,8 +447,8 @@ section {
             transform: translate(611px, 94px);
   }
   to {
-    -webkit-transform: translate(611px, 94px) rotate(-6deg);
-            transform: translate(611px, 94px) rotate(-6deg);
+    -webkit-transform: translate(611px, 94px) rotate(-4deg);
+            transform: translate(611px, 94px) rotate(-4deg);
   }
 }
 
