@@ -37,6 +37,16 @@
     svg
       width: inherit
       height: inherit
+
+#animated-letters
+  display: block
+  @include responsive(1194px)
+    display: none
+#static-letters
+  display: none
+  @include responsive(1194px)
+    display: block
+
 @mixin animation-properties($origin,$duration: 4, $anim-fnc: ease-in-out, $direction: alternate)
   animation-iteration-count: infinite
   animation-timing-function: $anim-fnc
