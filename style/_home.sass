@@ -5,8 +5,9 @@
   display: flex
   flex-direction: column
   justify-content: space-around
-  width: 100%
-  align-items: center
+  // width: 100%
+  // align-items: center
+  text-align: center
   &__identity
     flex-grow: 2
     display: flex
@@ -22,13 +23,14 @@
   &__occupation
     font-size: 24px
     display: flex
+    justify-content: center
     @include responsive(425px)
       font-size: $header-four-ml
   &__svg-illustration
-    width: 95vw
     position: relative
     overflow: hidden
     flex-grow: 10
+    
   &__rocket
     width: 35px
     height: 35px
@@ -43,8 +45,7 @@
 #topoftop 
   position: absolute
   z-index: 11
-
-
+  
 
 @mixin animation-properties($origin,$duration: 4, $anim-fnc: ease-in-out, $direction: alternate)
   animation-iteration-count: infinite
