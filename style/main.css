@@ -659,6 +659,7 @@ section {
 .blob-card__text-promo {
   font-size: 49px;
   color: #fff;
+  line-height: 1.6em;
 }
 
 @media screen and (max-width: 1024px) {
